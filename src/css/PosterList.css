@@ -1,0 +1,47 @@
+.posterList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.posterList--container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.posterList--title {
+  font-size: 2.5rem;
+  color: #1c1c1c;
+  font-weight: bold;
+  width: 200px;
+  height: 35px;
+}
+
+.posterList--active{
+  text-decoration: underline #d8a860;
+  text-decoration-thickness: 5px;
+}
+
+.posterList--grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2vw;
+}
+
+@media screen and (max-width: 600px){
+
+  .posterList--title{
+    width: 100%;
+    text-align: center;
+    margin: 0.7rem 0;
+  }
+
+  .posterList--container{
+    flex-direction: column;
+  }
+
+}

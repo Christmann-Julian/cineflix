@@ -1,0 +1,129 @@
+#contact{
+  background-color: #f9f9fb;
+  padding: 11rem 0 3rem 0;
+  height: 75vh;
+}
+
+.container--contact{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 10px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 50px -10px #d6d6d6;
+  box-sizing: border-box;
+}
+
+.container--contact .contact--title{
+  text-align: center;
+  color: #2a2a2a;
+  margin-bottom: 50px;
+}
+
+.container--contact .contact--title h6{
+  font-size: 2em;
+}
+
+.container--contact .contact--title h3{
+  font-size: 3em;
+}
+
+.container--contact form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+.container--contact form .field{
+  width: 45%;
+}
+
+.container--contact form .field-2, .container--contact form textarea{
+  width: 100%;
+}
+
+.container--contact form textarea{
+  resize: none;
+  height: 100px;
+}
+
+.container--contact form .field, .container--contact form .field-2, .container--contact form textarea{
+  margin: 15px 0;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e4e4ec;
+  transition: 0.2s;
+}
+
+.container--contact form .field:hover, .container--contact form .field-2:hover, .container--contact form textarea:hover{
+  border-bottom: 2px solid #901818;
+}
+
+.container--contact form .button{
+  width: 192px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: #901818;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6em;
+  cursor: pointer;
+  outline: none;
+  margin: 30px auto;
+  transition: 0.2s;
+}
+
+.container--contact form .button:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 50px -10px rgb(182, 160, 160);
+}
+
+#not-mail {
+  display: none;
+  color: #ff4d4d;
+  width: 100%;
+  font-size: 1.4em;
+  text-align: end;
+}
+
+.form-message{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.error::placeholder {
+  color: #ff4d4d;
+}
+
+@media screen and (max-width: 600px){
+
+  .container--contact form{
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .container--contact form .field{
+    width: 100%;
+  }
+
+  .container--contact .contact--title h6{
+    font-size: 1.7em;
+  }
+  
+  .container--contact .contact--title h3{
+    font-size: 2.5em;
+  }
+
+  #contact{
+    height: 100vh;
+  }
+
+}

@@ -1,0 +1,14 @@
+.notFound--container{
+    margin-top: 8rem;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound--container p{
+    font-size: 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.7rem solid #901818;
+}

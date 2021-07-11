@@ -1,0 +1,79 @@
+.comment--title{
+    margin: 3rem 0;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    text-decoration: underline #d8a860;
+    text-decoration-thickness: 5px;
+}
+
+.comment--container{
+    max-width: 800px;
+	margin: auto;
+	background: #fff;
+	text-align: center;
+}
+
+.comment--group input, .comment--group textarea{
+    padding: 15px 5px;
+	width: 95%;
+	font-size: 15px;
+	border: 0;
+	border-radius: 5px;
+	background: #eceef0;
+	margin-top: 15px;
+}
+
+.comment--group textarea{
+    height: 150px;
+}
+
+input::placeholder, textarea::placeholder{
+	color: #aa9d9d
+}
+
+.comment--btn{
+    background: #901818;
+	color: #fff;
+	padding: 15px;
+	margin-top: 15px;
+	width: 40%;
+	font-size: 1.3em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
+.container-mess{
+	max-width: 800px;
+    margin: 0 auto;
+	padding: 30px 50px;
+    text-align: center;
+}
+
+.container-mess p{
+	margin: 15px 0;
+	padding: 10px;
+	background: #eceef0;
+}
+
+.blue{
+	color: #0962ff;
+}
+
+.desactive--comment{
+	font-size: 1.8rem;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #901818;
+	color: #fff;
+}
+
+@media all and (max-width: 500px) {
+    
+	.comment--btn{
+		padding: 10px;
+	}
+
+}
