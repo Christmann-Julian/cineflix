@@ -10,7 +10,7 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  top: 25rem;
+  top: 20rem;
   width: 50%;
   height: auto;
   padding: 2rem;
@@ -21,7 +21,9 @@
   font-size: 3.5rem;
   font-weight: bold;
   padding-bottom: 0.5rem;
-  border-bottom: 0.7rem solid #d8a860;
+  /* border-bottom: 0.7rem solid #d8a860; */
+  text-decoration: underline #d8a860;
+  text-decoration-thickness: 7px;
   align-self: flex-start;
 }
 .headerImg--overlay__desc {
@@ -41,6 +43,23 @@
   .headerImg{
     display: flex;
     justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+    
+  .headerImg--overlay {
+    top: 15rem;
+    width: 100%;
+  }
+
+  .headerImg--overlay__desc {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .headerImg--overlay__title {
+    padding: 0 2rem 0.5rem 2rem;
   }
 
 }

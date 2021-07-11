@@ -8,7 +8,15 @@ import {connect} from 'react-redux';
 class PosterComponent extends Component{
 
   state = {
-    hover: false
+    hover: false,
+    test: true,
+    width: window.innerWidth
+  }
+
+  componentDidMount = () => {
+    if(this.state.width < 800 && this.state.test === true){
+      this.setState({hover: true, test: false})
+    }
   }
 
   // Montre l'overlay quand l'utilisateur passe avec sa souris
