@@ -27,7 +27,7 @@ class HeaderComponent extends Component{
         <Link to={{pathname: '/'}}>
           <FontAwesome className="header--movie" name="film" size="5x"></FontAwesome>
         </Link>
-        <h3>watchmoovies</h3>
+        <h3>Cineflix</h3>
         <Link to={{pathname: this.activeLink()}}>
           <FontAwesome className="header--heart" name="heart" size="5x"></FontAwesome>
         </Link>

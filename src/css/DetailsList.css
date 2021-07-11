@@ -4,7 +4,7 @@
 
 .tabs {
   font-family: "28 Days Later" !important;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #1c1c1c;
   font-weight: bold;
   padding: 15px;
@@ -84,7 +84,7 @@
 .info--details{
   display: none;
   width: 70%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .info--details__title{
@@ -110,7 +110,7 @@
 }
 
 .table-style  {
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-collapse: collapse;
   width: 100%;
   box-shadow: 0 5px 50px rgba(0,0,0,0.15);
@@ -156,11 +156,12 @@
 }
 
 .description--text{
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-align: justify;
   color: #1c1c1c;
   width: 70%;
   margin: 0 auto;
+  line-height: 150%;
 }
 
 .videoPlayer{

@@ -22,7 +22,8 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Wicked Scary Movie", Helvetica, Arial, sans-serif !important;
+  font-family:  'Arial Narrow', Arial, sans-serif;
+  /* font-family: "Wicked Scary Movie", Helvetica, Arial, sans-serif !important;  */
 }
 div {
   overflow: hidden;

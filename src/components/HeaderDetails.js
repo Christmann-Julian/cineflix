@@ -23,6 +23,16 @@ class HeaderDetails extends Component{
     }
   }
 
+  getText(content, limit=600){
+
+    if(content.length <= limit){
+      return content;
+    }
+  
+    return content.substr(0, limit).trim() + '...';
+
+  }
+
   render(){
 
     this.calcVote();
@@ -37,7 +47,7 @@ class HeaderDetails extends Component{
           </div>
           <div className="headerDetails--container">
               <h3 className="headerDetails--container__title">{this.props.mTitle}</h3>
-              <p className="headerDetails--container__desc">{this.props.mDesc}</p>
+              <p className="headerDetails--container__desc">{this.getText(this.props.mDesc)}</p>
               <div className="headerDetails--info">
                   <Container iconName="clock" content={calcTime(this.props.runtime)}></Container>
                   <Stars fakeArray1={this.fakeArray1} fakeArray2={this.fakeArray2} ></Stars>
