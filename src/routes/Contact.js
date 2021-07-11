@@ -2,10 +2,11 @@ import{ init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
 import React, { useState } from "react";
 import Footer from '../components/Footer';
+import { MAIL_API_KEY, SERVICE_ID, TEMPLATE_KEY } from '../config';
 import '../css/Contact.css';
 
 const Contact = () => {
-  init("user_BOS5IXKTlO290ZGLOt59L");
+  init(MAIL_API_KEY);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -28,7 +29,7 @@ const Contact = () => {
     e.preventDefault();
 
     if(name && isEmail() && message){
-      sendFeedback("template_mh00olq", {
+      sendFeedback(TEMPLATE_KEY, {
         name,
         phone,
         email,
@@ -68,7 +69,7 @@ const Contact = () => {
   const sendFeedback = (templateId, variables) => {
     
     // Envoie le message à mon adresse
-    emailjs.send("service_po4jpgd", templateId, variables)
+    emailjs.send(SERVICE_ID, templateId, variables)
       .then((res) => {
         // Envoie réussi et remise à 0 des hooks
         successMessage();

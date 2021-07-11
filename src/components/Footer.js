@@ -15,7 +15,7 @@ class Footer extends Component{
               <Link to={{pathname: '/contact'}}>
                   <FontAwesome className="fas fa-envelope" name="mail" />
               </Link>
-              <a href="https://github.com/"><FontAwesome className="fa fa-github" name="github" /></a>
+              <a href="https://github.com/Christmann-Julian"><FontAwesome className="fa fa-github" name="github" /></a>
           </div>
           
           <div className="footer-left">
